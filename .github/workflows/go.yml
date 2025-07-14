@@ -28,11 +28,8 @@ jobs:
 
       - name: Lint
         uses: golangci/golangci-lint-action@v3
-        with:
-          args: >
-            --disable=errcheck,ineffassign
-            --exclude-functions="(*database/sql.DB).Close,(*database/sql.Rows).Close"
-            --out-format=colored-line-number
+        
+
 
   deploy:
     name: Push Docker image to Docker Hub
