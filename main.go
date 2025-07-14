@@ -105,7 +105,7 @@ func main() {
 
 	defer func() {
 		if err := db.Close(); err != nil {
-			fmt.Println("Ошибка при закрытии БД:", err)
+			fmt.Println("Ошибка при закрытии бд:", err)
 		}
 	}()
 
